@@ -1,0 +1,15 @@
+# LLM provider is abstracted - switch via configuration
+server:
+  port: 8084
+
+spring:
+  application:
+    name: jj-ai-service
+  ai:
+    openai:
+      api-key: ${AI_API_KEY:sk-placeholder}
+      chat:
+        options:
+          model: gpt-4o
+  kafka:
+    bootstrap-servers: localhost:9092

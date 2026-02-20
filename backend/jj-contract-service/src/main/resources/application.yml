@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: jj-contract-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jj_contracts
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  kafka:
+    bootstrap-servers: localhost:9092

@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: jj-auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jj_auth
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+jwt:
+  secret: CHANGE_ME_IN_PRODUCTION
+  expiration: 3600000
+  refresh-expiration: 86400000
